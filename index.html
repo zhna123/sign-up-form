@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <div class="left">
+            <img src="images/leaves.jpeg" alt="">
+            <div class="logo">
+                <img src="images/odin-lined.png" alt="">
+                <div class="name">ODIN</div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="caption">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
+                Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <div class="form">
+                <form action="" method="post" id="signup">
+                    <p>Let's do this!</p>
+                    <div class="inputGroup firstName">
+                        <label for="first_name"> FIRST NAME</label>
+                        <input type="text" placeholder=" " id="first_name" name="firstName" required>
+                    </div>
+                    
+                    <div class="inputGroup lastName">
+                        <label for="last_name"> LAST NAME</label>
+                        <input type="text" placeholder=" " id="last_name" name="lastName" required> 
+                    </div>
+
+                    <div class="inputGroup email">
+                        <label for="email">EMAIL</label>
+                        <input type="email" placeholder=" " name="email" id="email" autocomplete="off" required>
+                    </div>
+
+                    <div class="inputGroup phone">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" placeholder=" " name="phone" id="phone" required>
+                    </div>
+
+                    <div class="inputGroup password">
+                        <label for="password">PASSWORD</label>
+                        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" placeholder=" " name="password" id="password" required>
+                    </div>
+
+                    <div class="inputGroup confirm">
+                        <label for="confirm">CONFIRM PASSWORD</label>
+                        <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" placeholder=" " name="confirm" id="confirm" required>
+                    </div>
+                    
+                </form>
+            </div>
+            <div class="bottom">
+                <button type="submit" form="signup">Create Account</button>
+                <p>Already have an account? <a href="http://">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
